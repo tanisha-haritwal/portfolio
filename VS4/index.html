@@ -1,0 +1,30 @@
+<html>
+<title>
+Family Book
+</title>
+<head>
+<body>
+<h1>Family Book</h1>
+<h4 id="family_member_name"></h4>
+<img src="family_img.png" id="img_fam">
+<button onclick="update();">Next</button>
+<script>
+var images=["grandfather(animated)_img.png","grandmother(animated)_img.png","father(animated)_img.png", 
+"mother(animated)_img.png", "brother(animated)_img.png", "sister(animated)_img.png"]
+var names=["Diljeet Singh", "Alia Singh", "Ranbir Singh", "Kritika Singh", "Rocky Singh", "Soni Singh"];
+var i=0;
+function update(){
+    i++;
+    var numbers_of_family_member_in_array=5;
+    if(i>numbers_of_family_member_in_array){
+        i=0;
+    }
+    var updatedImage= images[i];
+    var updatedName= names[i];
+    document.getElementById(img_fam).src=updatedImage;
+    document.getElementById(family_member_name).src=updatedName;
+}
+</script>
+</body>
+</head>
+</html>
