@@ -2,6 +2,7 @@ body{
 font-family: 'Roboto Condensed', sans-serif;
 background-color: cyan;
 color: black;
+text-align:center;
 }
 #note{
 font-family: 'Times New Roman', Times, serif;
