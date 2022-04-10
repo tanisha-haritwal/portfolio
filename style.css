@@ -1,29 +1,4 @@
-body{
-font-family: 'Roboto Condensed', sans-serif;
-background-color: cyan;
-color: black;
-text-align:center;
-}
-#note{
-font-family: 'Times New Roman', Times, serif;
-font-weight:bolder;
-letter-spacing: 3px;
-font-size: 23px;
-}
-#start_btn{
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-margin: top;
-width:10px;
-font-weight:bold;
-letter-spacing: 2px;
-}
-.copy_right_footer{
-background-color: blueviolet;
-color: azure;
-position: fixed;
-bottom: 0;
-width:100%;
-font-size: 20px;
-line-height: 3px;
-text-shadow: grey;
+.body{
+text-align: center;
+font-size:23px;
 }
