@@ -1,36 +1,39 @@
 <html>
+
 <head>
-    <title>Hand Gestures</title>
+  <meta charset="UTF-8">
+  <title>Intro p5.js</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <style type="text/css">
+  h3
+  {
+    font-size: 25px !important;
+  }
+  canvas {
+  	border:1px solid black;
+  }
+  </style>
 </head>
-<body>
-<center>
-<label id="heading">Hand Gestures</label>
-<br><br>
-<span>&#128076;</span>
-<span>&#128077;</span>
-<span>&#128073;</span>
-<span>&#128072;</span>
-<span>&#9996;</span>
-<br><br>
-<div id="Webcam View">Webcam View - </div>
-<div id="camera"></div>
-<br>
-<button class="btn btn-warning" onclick="startWebcam()">Capture Image</button>
-<br><br>
-<div id="Prediction">Prediction - </div>
-<br><br>
-<div id="Captured Image">Captured Image - </div>
-<button class="btn btn-success" onclick="startIdentification()">Identify Image</button>
-</center>
 
+<body>
+<div class="container">
+	<h3 class="btn btn-primary">Introduction to p5.js</h3>
+	<hr>
+  <label>Filter Color:</label>
+  <input id="color_name" placeholder="enter filter color">
+  <br><br>
+  <button onclick="filter_tint()" class="btn btn-warning">Apply Filter</button>
+  <button onclick="take_snapshot()" class="btn btn-success">Take Snapshot</button>
+</div>
+
+<script src="main.js"></script>
 </body>
+
 </html>
+

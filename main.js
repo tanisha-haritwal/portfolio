@@ -1,17 +1,23 @@
-Webcam.set({
-width:350,
-height:300,
-img_format:'png',
-png:90
-});
+function preload(){
+}
 
-camera= document.getElementById("camera");
-Webcam.attach('camera');
+function setup(){
+canvas=createCanvas(640,480);
+canvas.position(110,250);
+video=createCapture(VIDEO);
+video.hide();
+tint_color="";
+}
+
+function draw(){
+image(video,0,0,640,480);
+tint(tint_color);
+}
 
 function take_snapshot(){
-Webcam.snap(function (data_uri){
-document.getElementById("result").innerHTML='<img id="captured_image" src="'+data_uri+'"/>';
-})
+save('filter_img.png');
 }
-console.log('ml5 version:', ml5.version);
-classifier=imageClassifier('https://teachablemachine.withgoogle.com/models/uMptNA6FI/model.json', modelLoaded);
+
+function filter_tint(){
+tint_color=document.getElementById("color_name").value;
+}
