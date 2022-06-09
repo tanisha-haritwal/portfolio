@@ -1,0 +1,21 @@
+body{
+background-color: lightskyblue;
+color: azure;
+font-size: 20px;
+}
+#score{
+font-size: 25px;
+margin-left: 500px;
+}
+
+#timer{
+font-size: 25px;
+float: right;
+margin-right: 500px;
+}
+
+#sketch_to_be_drawn{
+color: darkred;
+font-size: 21px;
+font-weight: bold;
+}
