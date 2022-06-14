@@ -10,3 +10,35 @@ timer_check="";
 drawn_sketch="";
 answer_holder="";
 score=0;
+
+function setup() { 
+canvas = createCanvas(280, 280);
+canvas.center();
+background("white");
+}
+
+function updateCanvas(){
+background("white");
+random_number = Math.floor((Math.random()*quick_draw_set.length)+1);
+console.log(random_number);
+sketch=random_number;
+}
+function draw(){
+function check_sketch(){
+timer_counter=timer_counter + 1;
+console.log(timer_counter);
+if(timer_counter == 400){
+timer_counter= 0;
+timer_check="completed";
+}
+if(timer_check == "completed"){
+timer_check="";
+timer_counter="";
+updateCanvas();
+}
+}
+if(drawn_sketch == sketch){
+answer_holder="set";
+score="score"+ 1;
+}
+}
